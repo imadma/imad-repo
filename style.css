@@ -6,16 +6,14 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    
+
 }
 .container{
     display: flex;
     background-color: #fff;
     flex-wrap: wrap;
-    width: 1200px;
     justify-content: center;
-    margin: auto;
-    max-height: 1200px;
+    max-height: 700px;
     overflow-y: auto;
 }
 .header{
@@ -33,14 +31,11 @@ body{
 }
 .plusonclick{
     margin-left: 10px;
-    color: blue;
+    color: blueviolet;
     font-size: 20px;
 }
-.plusonclick:hover{
-    color: darkblue;
-}
 .plusonclick:active{
-    color: red;
+    color: darkblue;
 }
 
 .inputfield{
@@ -57,4 +52,18 @@ button:focus {
     width:600px;
     background-color: black;
 }
+.container div{
+  width: 25%;
+  height: 150px;
+  background-color: lightblue;
+  position: relative;
+}
+.container div h1,h2,h3,h4,h5{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+button{
+  border: none;
 
+}
