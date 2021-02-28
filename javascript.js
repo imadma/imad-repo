@@ -9,7 +9,8 @@ window.onload = function(){
    //button event listener
    btn.addEventListener("click", addTodoItem);
    form.addEventListener("submit", addTodoItem);
-
+   //list event list event listener
+    list.addEventListener("change",boxCheked)
    // add todo item to list
    function addTodoItem(){
      if(input.value === ""){
@@ -25,6 +26,11 @@ window.onload = function(){
                   list.insertAdjacentHTML('beforeend',item);
                   id++;
                   form.reset();
-     }
-   }
+    }
+  }
+  function boxCheked(){const element = event.target;
+    if(element.type === "checkbox"){
+      element.parentNode.remove();
+    }
+}
 }
