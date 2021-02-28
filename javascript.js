@@ -8,7 +8,8 @@ window.onload = function(){
 
    //button event listener
    btn.addEventListener("click", addTodoItem);
-   form.addEventListener("submit", addTodoItem)
+   form.addEventListener("submit", addTodoItem);
+
    // add todo item to list
    function addTodoItem(){
      if(input.value === ""){
