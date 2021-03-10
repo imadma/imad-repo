@@ -1,2 +1,2 @@
-# hi there
-this is a training repository
+# To Do List
+
